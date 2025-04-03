@@ -1,0 +1,24 @@
+buildscript {
+    repositories {
+        google()  // Required for Android Gradle Plugin
+        mavenCentral()  // For other dependencies
+    }
+    dependencies {
+        // Android Gradle Plugin (AGP) - Use the latest stable version
+        classpath 'com.android.tools.build:gradle:8.9.0'
+    }
+}
+
+// Configure all projects (including the root project)
+allprojects {
+    repositories {
+        google()  // For Android libraries
+        mavenCentral()  // For open-source libraries
+        // maven { url "https://jitpack.io" }  // For JitPack libraries (if needed)
+    }
+}
+
+// Optional: Clean task to delete the build directory
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}
