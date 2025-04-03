@@ -1,4 +1,4 @@
-# Android from Sgroovygroovygroovygroovycratch
+# Android from Scratch
 
 A Template of a very basic android app made without using android studio
 
